@@ -1,0 +1,48 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Seamless marquee (single rail with two identical tracks) */
+@keyframes sm-scroll {
+  to { transform: translate3d(-50%,0,0); } /* move by exactly one track width */
+}
+
+.sm-marquee {
+  position: relative;
+  overflow: hidden;
+}
+
+.sm-rail {
+  display: flex;
+  gap: var(--gap, 3rem);
+  width: max-content;                 /* size to content so -50% = one track */
+  will-change: transform;
+  animation: sm-scroll var(--speed, 28s) linear infinite;
+  transform: translateZ(0);           /* GPU compositing */
+}
+
+.group:hover .sm-rail {
+  animation-play-state: paused;       /* pause on hover (optional) */
+}
+
+.sm-track {
+  display: flex;
+  gap: var(--gap, 3rem);
+}
+
+.sm-logo {
+  display: block;                     /* no inline baseline gap */
+  height: var(--h, 28px);
+  width: auto;
+  object-fit: contain;
+  opacity: .85;
+  transition: opacity .15s ease;
+}
+.sm-logo:hover { opacity: 1; }
+
+/* optional edge fades */
+.sm-fadeL, .sm-fadeR {
+  position: absolute; inset: 0 auto 0 0; width: 64px; pointer-events: none;
+  background: linear-gradient(to right, rgba(0,0,0,1), rgba(0,0,0,0));
+}
+.sm-fadeR { left: auto; right: 0; background: linear-gradient(to left, rgba(0,0,0,1), rgba(0,0,0,0)); }
