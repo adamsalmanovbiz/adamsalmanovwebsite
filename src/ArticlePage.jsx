@@ -1,5 +1,9 @@
 import React from "react";
 import { useParams, Link } from "react-router-dom";
+import adam6 from './assets/logos/adam6.jpg';
+import client1 from './assets/logos/client1.png';
+import wideangle from './assets/wideangle.png';
+import reactsvg from './assets/react.svg';
 
 // Example article data (in a real app, fetch from API or file)
 const articles = [
@@ -7,42 +11,42 @@ const articles = [
     slug: "agency-at-16",
     title: "How I Built a 6-Figure Content Agency at 16",
     date: "August 2025",
-    headerImage: "/src/assets/logos/adam6.jpg",
+    headerImage: adam6,
     content: `Lessons, mistakes, and systems from my journey scaling a founder-led content business as a teenager.\n\nLorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque euismod, nisi eu consectetur consectetur, nisl nisi consectetur nisi, euismod euismod nisi nisi euismod nisi.`
   },
   {
     slug: "founder-led-content",
     title: "The Power of Founder-Led Content",
     date: "July 2025",
-    headerImage: "/src/assets/logos/client1.png",
+    headerImage: client1,
     content: `Why founders should be the face of their brand, and how to build trust and authority online.\n\nAliquam erat volutpat. Etiam vitae nisi sit amet lorem accumsan porta. Duis nec velit nec nulla dictum euismod.`
   },
   {
     slug: "linkedin-authority",
     title: "LinkedIn Authority: From 0 to Consistent Inbound",
     date: "June 2025",
-    headerImage: "/src/assets/wideangle.png",
+    headerImage: wideangle,
     content: `How to build consistent inbound through LinkedIn — systems, cadence, and creative formats.`
   },
   {
     slug: "weekly-long-form",
     title: "Weekly Long-Form: Why It Works",
     date: "May 2025",
-    headerImage: "/src/assets/logos/client1.png",
+    headerImage: client1,
     content: `Why publishing a weekly long-form asset powers all downstream shorts and distribution.`
   },
   {
     slug: "shorts-machine",
     title: "Shorts Machine: Turning Long Form Into Daily Clips",
     date: "April 2025",
-    headerImage: "/src/assets/wideangle.png",
+    headerImage: wideangle,
     content: `A practical workflow for extracting hooks, retention edits, and platform-native clips at scale.`
   },
   {
     slug: "distribution",
     title: "Distribution That Scales",
     date: "March 2025",
-    headerImage: "/src/assets/react.svg",
+    headerImage: reactsvg,
     content: `Repurposing, cadence, and tracking KPIs that connect content to pipeline.`
   }
 ];

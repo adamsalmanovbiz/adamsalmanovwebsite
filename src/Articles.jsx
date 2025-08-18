@@ -1,3 +1,5 @@
+import adam6 from './assets/logos/adam6.jpg';
+import client1 from './assets/logos/client1.png';
       {/* SELECTED WORK (Portfolio) */}
       <section id="portfolio" className="max-w-7xl mx-auto px-6 md:px-8 py-16 md:py-24">
         <div className="mb-4 text-xs tracking-widest uppercase" style={{ color: '#DC2626' }}>
@@ -113,14 +115,14 @@ export default function Articles() {
               slug: "agency-at-16",
               title: "How I Built a 6-Figure Content Agency at 16",
               date: "August 2025",
-              headerImage: "/src/assets/logos/adam6.jpg",
+              headerImage: adam6,
               desc: "Lessons, mistakes, and systems from my journey scaling a founder-led content business as a teenager."
             },
             {
               slug: "founder-led-content",
               title: "The Power of Founder-Led Content",
               date: "July 2025",
-              headerImage: "/src/assets/logos/client1.png",
+              headerImage: client1,
               desc: "Why founders should be the face of their brand, and how to build trust and authority online."
             }
           ].map((article, i) => (

@@ -3,6 +3,11 @@
 
 import  { Resources } from './components/resources.jsx';
 import { Link } from 'react-router-dom';
+import adam6 from './assets/logos/adam6.jpg';
+import adamnyc from './assets/logos/adamnyc.jpg';
+import client1 from './assets/logos/client1.png';
+import wideangle from './assets/wideangle.png';
+import reactsvg from './assets/react.svg';
 
 export default function AdamSalmanov() {
   const brand = {
@@ -100,7 +105,7 @@ export default function AdamSalmanov() {
         style={{
           minHeight: "92svh",
           backgroundImage:
-            "linear-gradient(180deg, rgba(0,0,0,.35), rgba(0,0,0,.75)), url('src/assets/logos/adam6.jpg') ",
+            `linear-gradient(180deg, rgba(0,0,0,.35), rgba(0,0,0,.75)), url(${adam6})`,
           backgroundSize: "cover",
           backgroundPosition: "70% center",
         }}
@@ -230,7 +235,7 @@ export default function AdamSalmanov() {
           </div>
           <div className="rounded-2xl border border-white/10 p-6 bg-white/5">
             <img
-              src="/src/assets/logos/adamnyc.jpg"
+              src={adamnyc}
               alt="Adam Salmanov portrait"
               className="rounded-xl object-cover w-full"
               style={{ aspectRatio: "4 / 5", objectPosition: "80% center" }}
@@ -248,19 +253,19 @@ export default function AdamSalmanov() {
             {
               slug: "agency-at-16",
               title: "Founder Launch System",
-              image: "/src/assets/logos/client1.png",
+              image: client1,
               desc: "12-video sprint → $450k pipeline"
             },
             {
               slug: "founder-led-content",
               title: "Shorts Engine",
-              image: "/src/assets/react.svg",
+              image: reactsvg,
               desc: "90-day cadence • daily distribution"
             },
             {
               slug: "linkedin-authority",
               title: "LinkedIn Authority",
-              image: "/src/assets/wideangle.png",
+              image: wideangle,
               desc: "From 0 → consistent inbound"
             },
           ].map((item, i) => (
