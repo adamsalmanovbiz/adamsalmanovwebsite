@@ -1,11 +1,11 @@
 // src/AdamSalmanov.jsx
 // Personal site for Adam Salmanov — Founder-Led Content Marketing
 
-const base = import.meta.env.BASE_URL;
-
 import  { Resources } from './components/resources.jsx';
 import { Link } from 'react-router-dom';
-import reactsvg from './assets/react.svg';
+
+import adam6 from './assets/logos/adam6.jpg';
+import adamnyc from './assets/logos/adamnyc.jpg';
 
 export default function AdamSalmanov() {
   const brand = {
@@ -101,12 +101,12 @@ export default function AdamSalmanov() {
       <header
         className="relative grid place-items-center text-center overflow-hidden"
         style={{
-          minHeight: "92svh",
-          backgroundImage:
-            `linear-gradient(180deg, rgba(0,0,0,.35), rgba(0,0,0,.75)), url(${base}adam6.jpg)`,
-          backgroundSize: "cover",
-          backgroundPosition: "70% center",
-        }}
+  minHeight: "92svh",
+  backgroundImage: `linear-gradient(180deg, rgba(0,0,0,.35), rgba(0,0,0,.75)), url(${adam6})`,
+  backgroundSize: "cover",
+  backgroundPosition: "70% center",
+}}
+
       >
        
 
@@ -233,7 +233,7 @@ export default function AdamSalmanov() {
           </div>
           <div className="rounded-2xl border border-white/10 p-6 bg-white/5">
             <img
-              src={`${base}adamnyc.jpg`}
+                src={adamnyc}
               alt="Adam Salmanov portrait"
               className="rounded-xl object-cover w-full"
               style={{ aspectRatio: "4 / 5", objectPosition: "80% center" }}
@@ -251,19 +251,19 @@ export default function AdamSalmanov() {
             {
               slug: "agency-at-16",
               title: "Founder Launch System",
-              image: client1,
+              image: "/src/assets/logos/client1.png",
               desc: "12-video sprint → $450k pipeline"
             },
             {
               slug: "founder-led-content",
               title: "Shorts Engine",
-              image: reactsvg,
+              image: "/src/assets/react.svg",
               desc: "90-day cadence • daily distribution"
             },
             {
               slug: "linkedin-authority",
               title: "LinkedIn Authority",
-              image: wideangle,
+              image: "/src/assets/wideangle.png",
               desc: "From 0 → consistent inbound"
             },
           ].map((item, i) => (
