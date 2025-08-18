@@ -1,12 +1,10 @@
 // src/AdamSalmanov.jsx
 // Personal site for Adam Salmanov — Founder-Led Content Marketing
 
+const base = import.meta.env.BASE_URL;
+
 import  { Resources } from './components/resources.jsx';
 import { Link } from 'react-router-dom';
-import adam6 from './assets/logos/adam6.jpg';
-import adamnyc from './assets/logos/adamnyc.jpg';
-import client1 from './assets/logos/client1.png';
-import wideangle from './assets/wideangle.png';
 import reactsvg from './assets/react.svg';
 
 export default function AdamSalmanov() {
@@ -105,7 +103,7 @@ export default function AdamSalmanov() {
         style={{
           minHeight: "92svh",
           backgroundImage:
-            `linear-gradient(180deg, rgba(0,0,0,.35), rgba(0,0,0,.75)), url(${adam6})`,
+            `linear-gradient(180deg, rgba(0,0,0,.35), rgba(0,0,0,.75)), url(${base}adam6.jpg)`,
           backgroundSize: "cover",
           backgroundPosition: "70% center",
         }}
@@ -235,7 +233,7 @@ export default function AdamSalmanov() {
           </div>
           <div className="rounded-2xl border border-white/10 p-6 bg-white/5">
             <img
-              src={adamnyc}
+              src={`${base}adamnyc.jpg`}
               alt="Adam Salmanov portrait"
               className="rounded-xl object-cover w-full"
               style={{ aspectRatio: "4 / 5", objectPosition: "80% center" }}
