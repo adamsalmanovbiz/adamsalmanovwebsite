@@ -92,7 +92,7 @@ export default function AdamSalmanov() {
             <a href="#story">Story</a>
             <a href="#portfolio">Portfolio</a>
             <a href="#contact">Contact</a>
-            <a href="/adamsalmanovwebsite/articles" className="hover:text-white transition">Articles</a>
+            <Link to="/articles" className="hover:text-white transition">Articles</Link>
             <Button href="#book">Book a Call</Button>
           </div>
         </div>
