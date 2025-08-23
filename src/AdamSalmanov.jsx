@@ -116,7 +116,7 @@ export default function AdamSalmanov() {
           <div className="hidden md:flex items-center gap-6 text-sm text-white/80">
             <a href="#work" onClick={goTo("work")}>What I Do</a>
             <a href="#story" onClick={goTo("story")}>Story</a>
-            <a href="#portfolio" onClick={goTo("portfolio")}>Portfolio</a>
+            {/* <a href="#portfolio" onClick={goTo("portfolio")}>Portfolio</a> */}
             <a href="#contact" onClick={goTo("contact")}>Contact</a>
             <Link to="/articles" className="hover:text-white transition">Articles</Link>
             <Button href="#book">Book a Call</Button>
