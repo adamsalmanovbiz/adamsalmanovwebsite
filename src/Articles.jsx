@@ -82,8 +82,16 @@ export default function Articles() {
           </div>
           <div className="hidden md:flex items-center gap-6 text-sm text-white/80">
             <a href="/">Home</a>
-            <a href="#contact">Contact</a>
-            <a href="#book" className="inline-flex items-center gap-2 rounded-xl px-5 py-3 text-sm font-medium transition-transform hover:-translate-y-0.5" style={{ backgroundColor: brand.red, color: brand.black }}>Book a Call</a>
+            <a
+  href="https://cal.com/adamsal/salmanovmedia"
+  target="_blank"
+  rel="noopener noreferrer"
+  className="inline-flex items-center gap-2 rounded-xl px-5 py-3 text-sm font-medium transition-transform hover:-translate-y-0.5"
+  style={{ backgroundColor: brand.red, color: brand.black }}
+>
+  Book a Call
+</a>
+
           </div>
         </div>
       </nav>

@@ -339,14 +339,28 @@ export default function AdamSalmanov() {
             <div className="text-xs tracking-widest uppercase mb-2" style={{ color: brand.red }}>Free intro call</div>
             <div className="text-lg font-semibold" style={{ fontFamily: "Space Grotesk, Inter, system-ui" }}>15-minute fit check</div>
             <p className="text-white/70 text-sm mt-1">No pressure. See if I can help and how we’d approach it.</p>
-            <div className="mt-4"><Button href="https://cal.com/adamsal/15min">Book 15-min</Button></div>
+           <div className="mt-4"><Button
+    href="https://cal.com/adamsal/15min"
+    target="_blank"
+    rel="noopener noreferrer"  >
+    Book 15-min
+  </Button>
+</div>
           </div>
            <div className="rounded-2xl border border-white/10 p-6 bg-white/5">
             <div className="text-xs tracking-widest uppercase mb-2" style={{ color: brand.red }}>Done For You</div>
             <div className="text-lg font-semibold" style={{ fontFamily: "Space Grotesk, Inter, system-ui" }}>Salmanov Media</div>
             {/* <div className="text-2xl font-bold mt-1">$200</div> */}
             <p className="text-white/70 text-sm mt-1">Intro call related to working with my agency salmanov media</p>
-            <div className="mt-4"><Button href="https://cal.com/adamsal/salmanovmedia">Book call with agency</Button></div>
+           <div className="mt-4">
+  <Button
+    href="https://cal.com/adamsal/salmanovmedia"
+    target="_blank"
+    rel="noopener noreferrer"
+  >
+    Book 15-min
+  </Button>
+</div>
           </div>
         </div>
       </Section>

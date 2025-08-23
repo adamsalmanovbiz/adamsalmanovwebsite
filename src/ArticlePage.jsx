@@ -92,7 +92,6 @@ export default function ArticlePage() {
           </div>
           <div className="hidden md:flex items-center gap-6 text-sm text-white/80">
             <Link to="/">Home</Link>
-            <a href="#contact">Contact</a>
             <a
               href="#book"
               className="inline-flex items-center gap-2 rounded-xl px-5 py-3 text-sm font-medium transition-transform hover:-translate-y-0.5"
