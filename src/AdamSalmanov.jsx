@@ -96,7 +96,10 @@ export default function AdamSalmanov() {
             <a href="#portfolio">Portfolio</a>
             <a href="#contact">Contact</a>
             <Link to="/articles" className="hover:text-white transition">Articles</Link>
-            <Button href="#book">Book a Call</Button>
+<Button href="javascript:void(0)" onClick={() => document.getElementById('book').scrollIntoView({ behavior: 'auto' })}>
+  Book a Call
+</Button>
+
           </div>
         </div>
       </nav>

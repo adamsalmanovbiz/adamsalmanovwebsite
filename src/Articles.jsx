@@ -81,7 +81,7 @@ export default function Articles() {
             <span className="text-white -ml-[2px]">/&gt;</span>
           </div>
           <div className="hidden md:flex items-center gap-6 text-sm text-white/80">
-            <a href="/">Home</a>
+              <Link to="/">Home</Link>
             <a
   href="https://cal.com/adamsal/salmanovmedia"
   target="_blank"
