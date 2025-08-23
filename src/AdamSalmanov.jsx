@@ -175,11 +175,11 @@ export default function AdamSalmanov() {
           {[
             {
               h: "Founder led marketing | B2B ",
-              p: "Your face is the brand. We turn founders into a growth engine. Long-form, clips, podcasts, YouTube, LinkedIn, built to create trust, land B2B deals. Content that makes people want to work with you. If investors can buy into a founder because of who they are, why cant we sell to customers with their story?",
+              p: "Your face is the brand. We turn founders into a growth engine. Long-form, clips, podcasts, YouTube, LinkedIn, built to create trust, land B2B deals. Content that makes people want to work with you. If investors can buy into a founder because of who they are, why cant we sell to customers with their story? (This mainly works well with B2B founders but can still work with B2C founders)",
             },
             {
-              h: "Ghost Creator Campaign | DTC",
-              p: "We engineer viral growth for DTC brands and apps by deploying ghost creators to produce original formats, fresh ideas, and high performing videos built to dominate social. We handle creation and distribution, driving millions of views fast without wasting time on strategy calls.",
+              h: "Ghost Creator Campaign | B2C + B2B",
+              p: "We engineer viral growth for B2C brands, apps, and personal brands by deploying ghost creators to produce original formats, fresh ideas, and high-performing videos built to dominate social. We handle both creation and distribution, driving millions of views fast while only paying per view with low CPM, and without wasting time on endless strategy calls.",
             },
           ].map((s, i) => (
             <div key={i} className="rounded-2xl border border-white/10 p-6 bg-white/5 hover:border-white/20 transition">
