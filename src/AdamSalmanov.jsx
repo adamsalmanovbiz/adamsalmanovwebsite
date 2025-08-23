@@ -165,7 +165,7 @@ export default function AdamSalmanov() {
         </div>
         <div className="mt-6 flex gap-3">
           <Button href="#book">Work with me</Button>
-          <Button to="/articles" variant="ghost">Visit articles</Button>
+          <Button href="/adamsalmanovwebsite/articles" variant="ghost">Visit articles</Button>
         </div>
       </Section>
 

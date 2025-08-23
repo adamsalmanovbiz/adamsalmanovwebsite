@@ -125,7 +125,7 @@ export default function Articles() {
               slug: "founder-led-content",
               title: "The Power of Founder-Led Content",
               date: "July 2025",
-              headerImage: adam7,
+              headerImage: client1,
               desc: "Why founders should be the face of their brand, and how to build trust and authority online."
             }
           ].map((article, i) => (
