@@ -1,6 +1,8 @@
 import adam6 from './assets/logos/adam6.jpg';
 import adamnyc from './assets/logos/adamnyc.jpg';
 import client1 from './assets/logos/client1.png';
+import hero from "./assets/logos/adam6.jpg";
+
 
 
 {/* SELECTED WORK (Portfolio) */}
@@ -91,8 +93,7 @@ export default function Articles() {
         className="relative grid place-items-center text-center overflow-hidden"
         style={{
           minHeight: "60svh",
-          backgroundImage:
-            "linear-gradient(180deg, rgba(0,0,0,.35), rgba(0,0,0,.75)), url('src/assets/logos/adam6.jpg') ",
+             backgroundImage: `linear-gradient(180deg, rgba(0,0,0,.35), rgba(0,0,0,.75)), url(${hero})`,
           backgroundSize: "cover",
           backgroundPosition: "80% center",
         }}
@@ -113,18 +114,18 @@ export default function Articles() {
         <div className="grid gap-8">
           {/* Article data array */}
           {[
-            {
-              slug: "agency-at-16",
-              title: "How I Built a 6-Figure Content Agency at 16",
-              date: "August 2025",
-              headerImage: client1,
-              desc: "Lessons, mistakes, and systems from my journey scaling a founder-led content business as a teenager."
-            },
+            // {
+            //   slug: "agency-at-16",
+            //   title: "How I Built a 6-Figure Content Agency at 16",
+            //   date: "August 2025",
+            //   headerImage: client1,
+            //   desc: "Lessons, mistakes, and systems from my journey scaling a founder-led content business as a teenager."
+            // },
             {
               slug: "founder-led-content",
               title: "The Power of Founder-Led Content",
               date: "July 2025",
-              headerImage: client1,
+              headerImage: adam7,
               desc: "Why founders should be the face of their brand, and how to build trust and authority online."
             }
           ].map((article, i) => (
