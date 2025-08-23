@@ -1,4 +1,9 @@
-      {/* SELECTED WORK (Portfolio) */}
+import adam6 from './assets/logos/adam6.jpg';
+import adamnyc from './assets/logos/adamnyc.jpg';
+import client1 from './assets/logos/client1.png';
+
+
+{/* SELECTED WORK (Portfolio) */}
       <section id="portfolio" className="max-w-7xl mx-auto px-6 md:px-8 py-16 md:py-24">
         <div className="mb-4 text-xs tracking-widest uppercase" style={{ color: '#DC2626' }}>
           Selected Work
@@ -10,17 +15,17 @@
           {[
             {
               title: "Founder Launch System",
-              image: "/src/assets/logos/client1.png",
+              image: adam6,
               desc: "12-video sprint → $450k pipeline"
             },
             {
               title: "Shorts Engine",
-              image: "/src/assets/react.svg",
+              image: client1,
               desc: "90-day cadence • daily distribution"
             },
             {
               title: "LinkedIn Authority",
-              image: "/src/assets/wideangle.png",
+              image: adamnyc,
               desc: "From 0 → consistent inbound"
             },
           ].map((item, i) => (
@@ -75,7 +80,6 @@ export default function Articles() {
           </div>
           <div className="hidden md:flex items-center gap-6 text-sm text-white/80">
             <a href="/">Home</a>
-            <a href="/articles" className="hover:text-white transition">Articles</a>
             <a href="#contact">Contact</a>
             <a href="#book" className="inline-flex items-center gap-2 rounded-xl px-5 py-3 text-sm font-medium transition-transform hover:-translate-y-0.5" style={{ backgroundColor: brand.red, color: brand.black }}>Book a Call</a>
           </div>
@@ -90,7 +94,7 @@ export default function Articles() {
           backgroundImage:
             "linear-gradient(180deg, rgba(0,0,0,.35), rgba(0,0,0,.75)), url('src/assets/logos/adam6.jpg') ",
           backgroundSize: "cover",
-          backgroundPosition: "70% center",
+          backgroundPosition: "80% center",
         }}
       >
         <div>
@@ -113,14 +117,14 @@ export default function Articles() {
               slug: "agency-at-16",
               title: "How I Built a 6-Figure Content Agency at 16",
               date: "August 2025",
-              headerImage: "/src/assets/logos/adam6.jpg",
+              headerImage: client1,
               desc: "Lessons, mistakes, and systems from my journey scaling a founder-led content business as a teenager."
             },
             {
               slug: "founder-led-content",
               title: "The Power of Founder-Led Content",
               date: "July 2025",
-              headerImage: "/src/assets/logos/client1.png",
+              headerImage: client1,
               desc: "Why founders should be the face of their brand, and how to build trust and authority online."
             }
           ].map((article, i) => (

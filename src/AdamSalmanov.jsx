@@ -3,9 +3,10 @@
 
 import  { Resources } from './components/resources.jsx';
 import { Link } from 'react-router-dom';
-
+import PortfolioCarousel from "./components/PortfolioCarousel.jsx";
 import adam6 from './assets/logos/adam6.jpg';
 import adamnyc from './assets/logos/adamnyc.jpg';
+import client1 from './assets/logos/client1.png';
 
 export default function AdamSalmanov() {
   const brand = {
@@ -91,7 +92,7 @@ export default function AdamSalmanov() {
             <a href="#story">Story</a>
             <a href="#portfolio">Portfolio</a>
             <a href="#contact">Contact</a>
-            {/* <a href="/articles" className="hover:text-white transition">Articles</a> */}
+            <a href="/adamsalmanovwebsite/articles" className="hover:text-white transition">Articles</a>
             <Button href="#book">Book a Call</Button>
           </div>
         </div>
@@ -101,12 +102,11 @@ export default function AdamSalmanov() {
       <header
         className="relative grid place-items-center text-center overflow-hidden"
         style={{
-  minHeight: "92svh",
-  backgroundImage: `linear-gradient(180deg, rgba(0,0,0,.35), rgba(0,0,0,.75)), url(${adam6})`,
-  backgroundSize: "cover",
-  backgroundPosition: "70% center",
-}}
-
+          minHeight: "92svh",
+          backgroundImage: `linear-gradient(180deg, rgba(0,0,0,.35), rgba(0,0,0,.75)), url(${adam6})`,
+          backgroundSize: "cover",
+          backgroundPosition: "70% center",
+        }}
       >
        
 
@@ -150,12 +150,11 @@ export default function AdamSalmanov() {
 
 
       {/* WHAT I DO */}
-      <Section id="work" kicker="What I Do" title="Operator for media arms & founder-led content">
+      <Section id="work" kicker="What I Do" title="Content Marketing">
         <div className="grid md:grid-cols-1 gap-6">
           {[
-            { h: "Media Arm Creation + Operating", p: "We build you a full media arm from scratch, whether for your startup, your fund, or your personal brand. Editors, creative directors, strategy, workflows, publishing systems. Everything A to Z. Then I run it day-to-day so it actually works, not just exists." },
-            { h: "Founder led marketing ", p: "Your face is the brand. We turn founders or investors into the growth engine—long-form, clips, podcasts, YouTube, LinkedIn, built to create trust, land B2B deals, or attract more investments. Content that makes people want to work with you." },
-            { h: "Distribution", p: "We take your existing content and scale it. Clipping pages, repurposing, pumping out more videos, spinning up new formats, and expanding reach across every platform. It’s about multiplying volume and presence, without reinventing the strategy you already have." },
+            { h: "Founder led marketing | B2B ", p: "Your face is the brand. We turn founders into a growth engine. Long-form, clips, podcasts, YouTube, LinkedIn, built to create trust, land B2B deals. Content that makes people want to work with you. If investors can buy into a founder because of who they are, why cant we sell to customers with their story?" },
+            { h: "Ghost Creator Campaign | DTC", p: "We engineer viral growth for DTC brands and apps by deploying ghost creators to produce original formats, fresh ideas, and high performing videos built to dominate social. We handle creation and distribution, driving millions of views fast without wasting time on strategy calls." },
           ].map((s, i) => (
             <div key={i} className="rounded-2xl border border-white/10 p-6 bg-white/5 hover:border-white/20 transition">
               <div className="text-xs tracking-widest uppercase mb-2" style={{ color: brand.red }}>Service</div>
@@ -166,7 +165,7 @@ export default function AdamSalmanov() {
         </div>
         <div className="mt-6 flex gap-3">
           <Button href="#book">Work with me</Button>
-          <Button href="/articles" variant="ghost">Visit articles</Button>
+          <Button href="/adamsalmanovwebsite/articles" variant="ghost">Visit articles</Button>
         </div>
       </Section>
 
@@ -233,7 +232,7 @@ export default function AdamSalmanov() {
           </div>
           <div className="rounded-2xl border border-white/10 p-6 bg-white/5">
             <img
-                src={adamnyc}
+              src={adamnyc}
               alt="Adam Salmanov portrait"
               className="rounded-xl object-cover w-full"
               style={{ aspectRatio: "4 / 5", objectPosition: "80% center" }}
@@ -248,24 +247,25 @@ export default function AdamSalmanov() {
       {/* <Section id="portfolio" kicker="Portfolio" title="Selected Work">
         <div className="grid md:grid-cols-3 gap-6">
           {[
-            {
+              {
               slug: "agency-at-16",
-              title: "Founder Launch System",
-              image: "/src/assets/logos/client1.png",
-              desc: "12-video sprint → $450k pipeline"
+              title: "Nodes.inc",
+              image: client1,
+              desc: "12-video sprint → $3 million in extra ARR"
             },
             {
               slug: "founder-led-content",
-              title: "Shorts Engine",
-              image: "/src/assets/react.svg",
+              title: "Ben Sharf",
+              image: client1,
               desc: "90-day cadence • daily distribution"
             },
             {
               slug: "linkedin-authority",
               title: "LinkedIn Authority",
-              image: "/src/assets/wideangle.png",
-              desc: "From 0 → consistent inbound"
+            image: client1,
+              desc: "100 million views"
             },
+            
           ].map((item, i) => (
             <a
               key={item.slug}
@@ -290,6 +290,42 @@ export default function AdamSalmanov() {
           ))}
         </div>
   </Section> */}
+
+  {/* <Section id="portfolio" kicker="Portfolio" title="Selected Work">
+      <PortfolioCarousel />
+    </Section> */}
+
+  {/* PRICING */}
+      <Section id="pricing" kicker="Pricing" title="Salmanov Media Services">
+        <div className="grid md:grid-cols-3 gap-6">
+          {/* Retainer */}
+          <div className="rounded-2xl border border-white/10 p-6 bg-white/5">
+            <div className="text-xs tracking-widest uppercase mb-2" style={{ color: brand.powerRed }}>DFY | Founder led marketing</div>
+            <div className="text-3xl font-semibold" style={{ fontFamily: 'Space Grotesk, Inter, system-ui' }}><span style={{ color: brand.red }}>$3,000</span>/ month min.</div>
+            <p className="text-white/70 text-sm mt-2">Capacity is intentionally small. Organic content that converts requires deep focus.</p>
+          </div>
+
+           <div className="rounded-2xl border border-white/10 p-6 bg-white/5">
+            <div className="text-xs tracking-widest uppercase mb-2" style={{ color: brand.powerRed }}>DFY | Ghost Creator Campaign</div>
+            <div className="text-3xl font-semibold" style={{ fontFamily: 'Space Grotesk, Inter, system-ui' }}><span style={{ color: brand.red }}>$3,000</span> budget min.</div>
+            <p className="text-white/70 text-sm mt-2">Baseline for the content engine. Pricing increases based on deliverables and revenue impact.</p>
+          </div>
+       
+          {/* Consulting & Team Placement — Setup Fee */}
+          <div className="rounded-2xl border border-white/10 p-6 bg-white/5">
+            <div className="text-xs tracking-widest uppercase mb-2" style={{ color: brand.powerRed }}>DWY | Consulting & Team Placement</div>
+            <div className="text-2xl font-semibold mb-1" style={{ fontFamily: 'Space Grotesk, Inter, system-ui' }}>Discovery‑quoted fee</div>
+            {/* <p className="text-white/70 text-sm">Quoted after discovery. Covers org design, role scoping, hiring pipeline, onboarding, training, and governance.</p> */}
+            <ul className="text-white/80 text-sm list-disc pl-5 mt-3 space-y-2">
+              <li>Recruit & place editors/strategists/lead</li>
+              <li>30–60 day ramp with oversight</li>
+            </ul>
+          </div>
+        </div>
+        <div className="mt-6 text-sm text-white/60">Capacity is intentionally small. Organic content that converts requires deep focus.</div>
+        <div className="mt-6"><Button href="https://cal.com/adamsal/salmanovmedia">Book Content Strategy Call</Button></div>
+      </Section>
+
 
      
       {/* BOOKING */}
