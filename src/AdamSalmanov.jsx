@@ -8,7 +8,7 @@ import adam6 from './assets/logos/adam6.jpg';
 import adamnyc from './assets/logos/adamnyc.jpg';
 import client1 from './assets/logos/client1.png';
 
-import { Link } from "react-router-dom";
+
 
 
 export default function AdamSalmanov() {
@@ -168,17 +168,7 @@ export default function AdamSalmanov() {
         </div>
         <div className="mt-6 flex gap-3">
           <Button href="#book">Work with me</Button>
-         <Link
-  to="/articles"
-  className="inline-flex items-center gap-2 rounded-xl px-5 py-3 text-sm font-medium transition-transform hover:-translate-y-0.5"
-  style={{
-    backgroundColor: "transparent",
-    color: "#FAFAFA",
-    border: "1px solid #B91C1C"
-  }}
->
-  Visit articles
-</Link>
+         <Button href="#/articles" variant="ghost">Visit articles</Button>
         </div>
       </Section>
 
