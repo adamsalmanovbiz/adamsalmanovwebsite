@@ -5,9 +5,17 @@ import { Resources } from "./components/resources.jsx";
 import { Link } from "react-router-dom";
 import PortfolioCarousel from "./components/PortfolioCarousel.jsx";
 import adam6 from "./assets/logos/adam6.jpg";
+import adamn1 from "./assets/logos/adam1.jpg";
 import adamnyc from "./assets/logos/adamnyc.jpg";
 import client1 from "./assets/logos/client1.png";
-
+import adamWall from "./assets/logos/adamwall.jpg";
+import adammirror from "./assets/logos/adammirror.jpg";
+import adamwindow from "./assets/logos/adamwindow.jpg";
+import adamtable from "./assets/logos/adamtable.jpg";
+import adamwindow2 from "./assets/logos/adamwindow2.jpg";
+import adamwindow3 from "./assets/logos/adamwindow3.jpg";
+import adamlib from "./assets/logos/adamlib.jpg";
+import adam24 from "./assets/logos/adam24.jpg"; 
 export default function AdamSalmanov() {
   const brand = {
     black: "#0A0A0A",
@@ -129,9 +137,9 @@ export default function AdamSalmanov() {
         className="relative grid place-items-center text-center overflow-hidden"
         style={{
           minHeight: "92svh",
-          backgroundImage: `linear-gradient(180deg, rgba(0,0,0,.35), rgba(0,0,0,.75)), url(${adam6})`,
+          backgroundImage: `linear-gradient(180deg, rgba(0,0,0,.35), rgba(0,0,0,.75)), url(${adam24})`,
           backgroundSize: "cover",
-          backgroundPosition: "70% center",
+          backgroundPosition: "45% 60%",
         }}
       >
         <div>
@@ -148,7 +156,7 @@ export default function AdamSalmanov() {
             Adam Salmanov
           </h1>
           <p className="text-white/100 max-w-2xl mx-auto mt-3">
-            I help startups generate <span style={{ color: brand.red }}>authority & attention</span> with content marketing
+            I help founders & startups build brands people <span style={{ color: brand.red }}>recognize & trust </span> with content marketing
           </p>
           <p className="text-white/60 max-w-2xl mx-auto ">Setting the standard for the younger generation.</p>
 
@@ -170,16 +178,20 @@ export default function AdamSalmanov() {
       </header>
 
       {/* WHAT I DO */}
-      <Section id="work" kicker="What I Do" title="Content Marketing">
+      <Section id="work" kicker="What I Do" title="Brand Building Through Content">
         <div className="grid md:grid-cols-1 gap-6">
           {[
             {
-              h: "Founder led marketing | B2B ",
-              p: "Your face is the brand. We turn founders into a growth engine. Long-form, clips, podcasts, YouTube, LinkedIn, built to create trust, land B2B deals. Content that makes people want to work with you. If investors can buy into a founder because of who they are, why cant we sell to customers with their story? (This mainly works well with B2B founders but can still work with B2C founders)",
+              h: "Individual Brand Building",
+              p: "Your name is already part of the brand. I help operators, founders, and investors turn what they're already doing into a personal brand that builds trust before conversations happen. This isn't about posting more. It's about being clear, consistent, and visible. Without content becoming your job. Storytelling, content, and distribution designed to drive inbound opportunities over time.",
             },
             {
-              h: "Ghost Creator Campaign | B2C + B2B",
-              p: "We engineer viral growth for B2C brands, apps, and personal brands by deploying ghost creators to produce original formats, fresh ideas, and high-performing videos built to dominate social. We handle both creation and distribution, driving millions of views fast while only paying per view with low CPM, and without wasting time on endless strategy calls.",
+              h: "Company Brand Building",
+              p: "Most companies aren't losing because of their product. They're losing because nobody understands them. I help companies turn what they're already building. Product, people, momentum, into a brand that feels clear, human, and trustworthy. Storytelling, content, and distribution designed to drive inbound customers, talent, and attention over time.",
+            },
+            {
+              h: "Systemized Content Team",
+              p: "I will build you an in-house content and distribution team.",
             },
           ].map((s, i) => (
             <div key={i} className="rounded-2xl border border-white/10 p-6 bg-white/5 hover:border-white/20 transition">
@@ -205,9 +217,9 @@ export default function AdamSalmanov() {
       <Section id="videos" kicker="Recent YouTube" title="Latest videos">
         <div className="grid md:grid-cols-3 gap-6">
           {[
-            "https://www.youtube.com/embed/4dD8GxFjM9c?si=gLM_pwTmEu_aXlVB",
-            "https://www.youtube.com/embed/Vq78zxx6Vk4?si=gRgktZNQAplmzwkd",
-            "https://www.youtube.com/embed/GIG93twUOSs?si=n3W5mjbwy-EX0M7O",
+            "https://www.youtube.com/embed/bfA-jcwIOzQ?si=Koj0hF-TCK2M00gC",
+            "https://www.youtube.com/embed/t5Mm5A6seY8?si=oGceok3zzwuCF8au",
+            "https://www.youtube.com/embed/pMl37h8mDsU?si=CbLae2V3reckJ-iL",
           ].map((src, i) => (
             <div key={i} className="rounded-2xl overflow-hidden border border-white/10 bg-white/5">
               <div className="aspect-video">
@@ -251,6 +263,83 @@ export default function AdamSalmanov() {
         </div>
       </Section>
 
+      {/* MY MISSION */}
+      <Section id="mission" kicker="My Mission" title="Why I do what I do">
+        {/* Wide photo banner */}
+        <div className="relative w-full rounded-2xl overflow-hidden border border-white/10">
+          <div
+            className="w-full h-72 md:h-96"
+            style={{
+              backgroundImage: `linear-gradient(180deg, rgba(0,0,0,.25), rgba(0,0,0,.50)), url(${adamWall})`,
+              backgroundSize: "cover",
+              backgroundPosition: "center 29%"
+            }}
+          />
+        </div>
+
+        {/* Full-width text section with background */}
+        <div className="w-full mt-8 rounded-2xl border border-white/10 bg-white/5 p-8 md:p-12">
+          {/* Key emphasized statement */}
+          <div
+            className="text-xl md:text-2xl font-semibold mb-8 pb-8 border-b border-white/10"
+            style={{ fontFamily: "Space Grotesk, Inter, system-ui", color: brand.ink }}
+          >
+            My mission: Set the standard for my generation.
+          </div>
+
+          {/* Mission paragraphs with separators */}
+          <div className="grid md:grid-cols-2 gap-8 md:gap-12">
+            <div className="space-y-6">
+              <p className="text-white/90 text-base leading-relaxed">
+                I believe the best brands are built by the people who are actually building the thing. Not by agencies who don't understand the vision. Not by marketers who've never shipped a product.
+              </p>
+              <div className="w-12 h-px" style={{ backgroundColor: brand.red }} />
+              <p className="text-white/90 text-base leading-relaxed">
+                When I was 16, I realized that content isn't just marketing—it's trust. It's the way founders connect with customers before the first call. It's how companies stand out in a sea of sameness.
+              </p>
+            </div>
+            <div className="space-y-6">
+              <p className="text-white/90 text-base leading-relaxed">
+                Not through paid ads or growth hacks, but through storytelling, consistency, and showing up as the humans behind the work.
+              </p>
+              <div className="w-12 h-px" style={{ backgroundColor: brand.red }} />
+              <p className="text-white/90 text-base leading-relaxed">
+                I've spent 6 years creating content, scaling agencies, and working with startups. Now I'm focused on building a new standard for what founder-led and company content should look like—real, strategic, and built to last.
+              </p>
+            </div>
+          </div>
+
+          {/* Context for videos */}
+          <div className="mt-12 pt-8 border-t border-white/10">
+            <p className="text-white/70 text-sm mb-6 text-center">
+              Watch how I'm documenting this journey and setting the standard for my generation through my YouTube channel.
+            </p>
+            <div className="grid md:grid-cols-3 gap-6">
+              {[
+                "https://www.youtube.com/embed/bfA-jcwIOzQ?si=Koj0hF-TCK2M00gC",
+                "https://www.youtube.com/embed/t5Mm5A6seY8?si=oGceok3zzwuCF8au",
+                "https://www.youtube.com/embed/pMl37h8mDsU?si=CbLae2V3reckJ-iL",
+              ].map((src, i) => (
+                <div key={i} className="rounded-2xl overflow-hidden border border-white/10 bg-white/5">
+                  <div className="aspect-video">
+                    <iframe
+                      src={src}
+                      title={`Setting the Standard video ${i + 1}`}
+                      className="w-full h-full"
+                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                      referrerPolicy="strict-origin-when-cross-origin"
+                      allowFullScreen
+                      style={{ border: 0 }}
+                    />
+                  </div>
+                  <div className="p-3 text-xs text-white/60">YouTube • Setting the Standard</div>
+                </div>
+              ))}
+            </div>
+          </div>
+        </div>
+      </Section>
+
       {/* PORTFOLIO (commented examples kept) */}
       {/*
       <Section id="portfolio" kicker="Portfolio" title="Selected Work">
@@ -260,56 +349,69 @@ export default function AdamSalmanov() {
 
       {/* PRICING */}
       <Section id="pricing" kicker="Pricing" title="Salmanov Media Services">
-        <div className="grid md:grid-cols-3 gap-6">
-          {/* Retainer */}
+        <div className="grid md:grid-cols-2 gap-6">
           <div className="rounded-2xl border border-white/10 p-6 bg-white/5">
-            <div className="text-xs tracking-widest uppercase mb-2" style={{ color: brand.powerRed }}>
-              DFY | Founder led marketing
+            <div className="text-lg font-semibold mb-2" style={{ fontFamily: "Space Grotesk, Inter, system-ui" }}>
+             Individual Brand Building
             </div>
-            <div className="text-3xl font-semibold" style={{ fontFamily: "Space Grotesk, Inter, system-ui" }}>
-              <span style={{ color: brand.red }}>$3,000</span>/ month min.
+            <div className="text-2xl font-semibold mb-2" style={{ color: brand.red }}>
+              $$$$/month
             </div>
-            <p className="text-white/70 text-sm mt-2">Capacity is intentionally small. Organic content that converts requires deep focus.</p>
+            <p className="text-white/70 text-sm">Done-for-you content for founders, operators, investors</p>
           </div>
 
           <div className="rounded-2xl border border-white/10 p-6 bg-white/5">
-            <div className="text-xs tracking-widest uppercase mb-2" style={{ color: brand.powerRed }}>
-              DFY | Ghost Creator Campaign
+            <div className="text-lg font-semibold mb-2" style={{ fontFamily: "Space Grotesk, Inter, system-ui" }}>
+              We'll Build & Run Your Content Team
             </div>
-            <div className="text-3xl font-semibold" style={{ fontFamily: "Space Grotesk, Inter, system-ui" }}>
-              <span style={{ color: brand.red }}>$3,000</span> budget min.
+            <div className="text-2xl font-semibold mb-2" style={{ color: brand.red }}>
+              Custom Quote
             </div>
-            <p className="text-white/70 text-sm mt-2">Baseline for the content engine. Pricing increases based on deliverables and revenue impact.</p>
+            <p className="text-white/70 text-sm">Recruit, train, and place your in-house content team.</p>
           </div>
 
-          {/* Consulting & Team Placement — Setup Fee */}
           <div className="rounded-2xl border border-white/10 p-6 bg-white/5">
-            <div className="text-xs tracking-widest uppercase mb-2" style={{ color: brand.powerRed }}>
-              DWY | Consulting & Team Placement
+            <div className="text-lg font-semibold mb-2" style={{ fontFamily: "Space Grotesk, Inter, system-ui" }}>
+             For Companies
             </div>
-            <div className="text-2xl font-semibold mb-1" style={{ fontFamily: "Space Grotesk, Inter, system-ui" }}>
-              Discovery-quoted fee
+            <div className="text-2xl font-semibold mb-2" style={{ color: brand.red }}>
+              $$$$/month
             </div>
-            <ul className="text-white/80 text-sm list-disc pl-5 mt-3 space-y-2">
-              <li>Recruit & place editors/strategists/lead</li>
-              <li>30–60 day ramp with oversight</li>
-            </ul>
+            <p className="text-white/70 text-sm">Founder-led teams & startups</p>
+          </div>
+
+          <div className="rounded-2xl border border-white/10 p-6 bg-white/5">
+            <div className="text-lg font-semibold mb-2" style={{ fontFamily: "Space Grotesk, Inter, system-ui" }}>
+              One-Off Projects
+            </div>
+            <div className="text-2xl font-semibold mb-2" style={{ color: brand.red }}>
+              Varies
+            </div>
+            <p className="text-white/70 text-sm">Short-form videos, vlogs, and single projects to show what we can do.</p>
           </div>
         </div>
-        <div className="mt-6 text-sm text-white/60">Capacity is intentionally small. Organic content that converts requires deep focus.</div>
-        <div className="mt-6">
+        <div className="mt-6 flex gap-3">
           <Button href="https://cal.com/adamsal/salmanovmedia" target="_blank" rel="noopener noreferrer">
             Book Content Strategy Call
           </Button>
+          <a
+            href="https://salmanovmedia.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center gap-2 rounded-xl px-5 py-3 text-sm font-medium transition-transform hover:-translate-y-0.5"
+            style={{ backgroundColor: "#FAFAFA", color: brand.black }}
+          >
+            Visit Website
+          </a>
         </div>
       </Section>
 
       {/* BOOKING */}
-      <Section id="book" kicker="Work Together" title="Consulting & calls">
+      <Section id="book" kicker="Work Together" title="Book a call with me">
         <div className="grid md:grid-cols-2 gap-6">
           <div className="rounded-2xl border border-white/10 p-6 bg-white/5">
             <div className="text-xs tracking-widest uppercase mb-2" style={{ color: brand.red }}>
-              Free intro call
+              Discovery call
             </div>
             <div className="text-lg font-semibold" style={{ fontFamily: "Space Grotesk, Inter, system-ui" }}>
               15-minute fit check
