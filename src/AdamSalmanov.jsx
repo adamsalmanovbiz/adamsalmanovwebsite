@@ -349,12 +349,88 @@ export default function AdamSalmanov() {
       </Section>
 
       {/* PORTFOLIO (commented examples kept) */}
-      
+
       {/* <Section id="portfolio" kicker="Portfolio" title="Selected Work">
               <Resources />
-        
+
       </Section> */}
-     
+
+      {/* SALMANOV MEDIA */}
+      <Section id="salmanov-media" kicker="Salmanov Media" title="Why I Built This Agency">
+        {/* Side-by-side: Photo left, Content right */}
+        <div className="grid md:grid-cols-5 gap-8 items-stretch">
+          {/* Left: Vertical photo */}
+          <div className="md:col-span-2 rounded-2xl overflow-hidden border border-white/10">
+            <img
+              src={adamtable}
+              alt="Adam Salmanov"
+              className="w-full h-full object-cover"
+              style={{ minHeight: "400px", aspectRatio: "3 / 4" }}
+            />
+          </div>
+
+          {/* Right: Text content */}
+          <div className="md:col-span-3 flex flex-col justify-center space-y-6">
+            <div
+              className="text-xl md:text-2xl font-semibold"
+              style={{ fontFamily: "Space Grotesk, Inter, system-ui", color: brand.ink }}
+            >
+              Content that builds trust before the first conversation.
+            </div>
+
+            <p className="text-white/90 text-base leading-relaxed">
+              Most founders know they need to build a personal brand. They know content drives trust, opens doors, and creates opportunities that cold outreach never will. But they don't have time to figure it out themselves.
+            </p>
+
+            <p className="text-white/90 text-base leading-relaxed">
+              That's why I built Salmanov Media. To give founders and operators the content engine they need—without becoming content creators themselves. We handle strategy, production, and distribution so you can focus on building.
+            </p>
+
+            <p className="text-white/90 text-base leading-relaxed">
+              We're not a generic agency. We specialize in founder-led content for startups, operators, and investors. People who are actually building something and want their story told the right way.
+            </p>
+
+            <p className="text-white/90 text-base leading-relaxed">
+              The result? Inbound opportunities, stronger network effects, and a brand that compounds over time. Content that works while you sleep.
+            </p>
+
+            <div className="pt-4">
+              <Button href="https://salmanovmedia.com" target="_blank" rel="noopener noreferrer">
+                Visit Salmanov Media
+              </Button>
+            </div>
+          </div>
+        </div>
+
+        {/* Client videos below */}
+        <div className="mt-12 pt-8 border-t border-white/10">
+          <p className="text-white/70 text-sm mb-6 text-center">
+            See some of the content we've produced for our clients.
+          </p>
+          <div className="grid md:grid-cols-3 gap-6">
+            {[
+              "https://www.youtube.com/embed/bfA-jcwIOzQ?si=Koj0hF-TCK2M00gC",
+              "https://www.youtube.com/embed/t5Mm5A6seY8?si=oGceok3zzwuCF8au",
+              "https://www.youtube.com/embed/pMl37h8mDsU?si=CbLae2V3reckJ-iL",
+            ].map((src, i) => (
+              <div key={i} className="rounded-2xl overflow-hidden border border-white/10 bg-white/5">
+                <div className="aspect-video">
+                  <iframe
+                    src={src}
+                    title={`Client video ${i + 1}`}
+                    className="w-full h-full"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerPolicy="strict-origin-when-cross-origin"
+                    allowFullScreen
+                    style={{ border: 0 }}
+                  />
+                </div>
+                <div className="p-3 text-xs text-white/60">YouTube • Client Work</div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </Section>
 
       {/* PRICING */}
       <Section id="pricing" kicker="Pricing" title="Salmanov Media Services">
