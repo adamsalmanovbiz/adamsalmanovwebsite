@@ -1,60 +1,8 @@
+import { Link } from "react-router-dom";
 import adam6 from './assets/logos/adam6.jpg';
 import adamnyc from './assets/logos/adamnyc.jpg';
 import client1 from './assets/logos/client1.png';
 import hero from "./assets/logos/adam6.jpg";
-
-
-
-{/* SELECTED WORK (Portfolio) */}
-      <section id="portfolio" className="max-w-7xl mx-auto px-6 md:px-8 py-16 md:py-24">
-        <div className="mb-4 text-xs tracking-widest uppercase" style={{ color: '#DC2626' }}>
-          Selected Work
-        </div>
-        <h2 className="text-2xl md:text-4xl font-semibold mb-6" style={{ fontFamily: 'Space Grotesk, Inter, system-ui' }}>
-          Portfolio
-        </h2>
-        <div className="grid md:grid-cols-3 gap-6">
-          {[
-            {
-              title: "Founder Launch System",
-              image: adam6,
-              desc: "12-video sprint → $450k pipeline"
-            },
-            {
-              title: "Shorts Engine",
-              image: client1,
-              desc: "90-day cadence • daily distribution"
-            },
-            {
-              title: "LinkedIn Authority",
-              image: adamnyc,
-              desc: "From 0 → consistent inbound"
-            },
-          ].map((item, i) => (
-            <div
-              key={i}
-              className="relative rounded-2xl border border-white/10 bg-gradient-to-br from-[#18181b] via-[#232326] to-[#101012] overflow-hidden flex flex-col justify-end min-h-[260px] group hover:border-white/20 transition"
-              style={{ fontFamily: 'Space Grotesk, Inter, system-ui' }}
-            >
-              {item.image && (
-                <img
-                  src={item.image}
-                  alt={item.title}
-                  className="absolute inset-0 w-full h-full object-cover opacity-30 group-hover:opacity-40 transition pointer-events-none"
-                  style={{ zIndex: 0 }}
-                />
-              )}
-              <div className="absolute inset-0" style={{background: "linear-gradient(180deg,rgba(10,10,10,0.1) 40%,rgba(10,10,10,0.95) 100%)", zIndex: 1}} />
-              <div className="relative z-10 p-6 flex flex-col items-start justify-end h-full w-full">
-                <div className="font-bold text-xl md:text-2xl text-white mb-1 leading-tight" style={{ fontFamily: 'Space Grotesk, Inter, system-ui' }}>{item.title}</div>
-                <div className="text-white/80 text-sm font-normal">{item.desc}</div>
-              </div>
-            </div>
-          ))}
-        </div>
-      </section>
-
-import { Link } from "react-router-dom";
 
 export default function Articles() {
   const brand = {
