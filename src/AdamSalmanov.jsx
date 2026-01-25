@@ -356,7 +356,7 @@ export default function AdamSalmanov() {
       </Section> */}
 
       {/* SALMANOV MEDIA */}
-      <Section id="salmanov-media" kicker="Salmanov Media" title="Why I Built This Agency">
+      <Section id="salmanov-media" kicker="Salmanov Media" title="Why I Do What I Do">
         {/* Side-by-side: Photo left, Content right */}
         <div className="grid md:grid-cols-5 gap-8 items-stretch">
           {/* Left: Vertical photo */}
@@ -375,28 +375,35 @@ export default function AdamSalmanov() {
               className="text-xl md:text-2xl font-semibold"
               style={{ fontFamily: "Space Grotesk, Inter, system-ui", color: brand.ink }}
             >
-              Content that builds trust before the first conversation.
+              Why I'm Building Salmanov Media
             </div>
 
             <p className="text-white/90 text-base leading-relaxed">
-              Most founders know they need to build a personal brand. They know content drives trust, opens doors, and creates opportunities that cold outreach never will. But they don't have time to figure it out themselves.
+              Most people start agencies because they see an opportunity. I'm doing this because I don't know how to do anything else—and I mean that in the best way. I've grown up making content. It's not a skill I learned in a course. It's what I've been obsessed with since I was a kid.
             </p>
 
             <p className="text-white/90 text-base leading-relaxed">
-              That's why I built Salmanov Media. To give founders and operators the content engine they need—without becoming content creators themselves. We handle strategy, production, and distribution so you can focus on building.
+              Now? This is the best way I can serve. Founders and startups need content. I know how to make it. And I get to learn from incredible people while doing what I love.
             </p>
 
             <p className="text-white/90 text-base leading-relaxed">
-              We're not a generic agency. We specialize in founder-led content for startups, operators, and investors. People who are actually building something and want their story told the right way.
+              Here's what I'm really building: a media engine that compounds. Every piece of content, every story told, every audience built—it stacks. That attention and storytelling power? It'll let me do whatever I want in the future.
             </p>
 
             <p className="text-white/90 text-base leading-relaxed">
-              The result? Inbound opportunities, stronger network effects, and a brand that compounds over time. Content that works while you sleep.
+              But right now, we're not some polished corporate team. We're young content kids who will be your content team. We adapt. We move fast. We figure out what works for your goals.
             </p>
 
-            <div className="pt-4">
+            <p className="text-white/90 text-base leading-relaxed">
+              So if this resonates—if you want a content team that's obsessed, hungry, and moves fast—let's talk.
+            </p>
+
+            <div className="pt-4 flex flex-wrap gap-3">
               <Button href="https://salmanovmedia.com" target="_blank" rel="noopener noreferrer">
                 Visit Salmanov Media
+              </Button>
+              <Button href="#book" variant="ghost">
+                Get Free Content Piece
               </Button>
             </div>
           </div>
@@ -405,7 +412,7 @@ export default function AdamSalmanov() {
         {/* Client videos below */}
         <div className="mt-12 pt-8 border-t border-white/10">
           <p className="text-white/70 text-sm mb-6 text-center">
-            See some of the content we've produced for our clients.
+            We're giving out a free content piece to the next 4 founders & startups that apply. See how we work, the content we produce, and if you're a fan, we can figure out how to work together.
           </p>
           <div className="grid md:grid-cols-3 gap-6">
             {[
