@@ -8,13 +8,13 @@ import adam6 from "./assets/logos/adam6.jpg";
 import adamn1 from "./assets/logos/adam1.jpg";
 import adamnyc from "./assets/logos/adamnyc.jpg";
 import client1 from "./assets/logos/client1.png";
-import adamWall from "./assets/logos/adamwall.jpg";
-import adammirror from "./assets/logos/adammirror.jpg";
-import adamwindow from "./assets/logos/adamwindow.jpg";
-import adamtable from "./assets/logos/adamtable.jpg";
-import adamwindow2 from "./assets/logos/adamwindow2.jpg";
-import adamwindow3 from "./assets/logos/adamwindow3.jpg";
-import adamlib from "./assets/logos/adamlib.jpg";
+import adamWall from "./assets/logos/AdamWall.jpg";
+import adammirror from "./assets/logos/AdamMirror.jpg";
+import adamwindow from "./assets/logos/AdamWindow.jpg";
+import adamtable from "./assets/logos/AdamTable.jpg";
+import adamwindow2 from "./assets/logos/AdamWindow2.jpg";
+import adamwindow3 from "./assets/logos/AdamWindow3.jpg";
+import adamlib from "./assets/logos/AdamLib.jpg";
 import adam24 from "./assets/logos/adam24.jpg"; 
 export default function AdamSalmanov() {
   const brand = {
