@@ -264,7 +264,7 @@ export default function AdamSalmanov() {
       </Section>
 
       {/* MY MISSION */}
-      <Section id="mission" kicker="My Mission" title="Why I do what I do">
+      <Section id="mission" kicker="My Mission" title="Setting the Standard for My Generation">
         {/* Wide photo banner */}
         <div className="relative w-full rounded-2xl overflow-hidden border border-white/10">
           <div
@@ -284,27 +284,35 @@ export default function AdamSalmanov() {
             className="text-xl md:text-2xl font-semibold mb-8 pb-8 border-b border-white/10"
             style={{ fontFamily: "Space Grotesk, Inter, system-ui", color: brand.ink }}
           >
-            My mission: Set the standard for my generation.
+            The system is designed to keep you average. I'm building the counter-proof.
           </div>
 
           {/* Mission paragraphs with separators */}
           <div className="grid md:grid-cols-2 gap-8 md:gap-12">
             <div className="space-y-6">
               <p className="text-white/90 text-base leading-relaxed">
-                I believe the best brands are built by the people who are actually building the thing. Not by agencies who don't understand the vision. Not by marketers who've never shipped a product.
+                Comfortable enough not to rebel, distracted enough not to build, just capable enough to be useful to someone else's vision. It's working. Look around—our generation is weaker, more medicated, less ambitious than any before us. And the people running things want it that way.
               </p>
               <div className="w-12 h-px" style={{ backgroundColor: brand.red }} />
               <p className="text-white/90 text-base leading-relaxed">
-                When I was 16, I realized that content isn't just marketing—it's trust. It's the way founders connect with customers before the first call. It's how companies stand out in a sea of sameness.
+                I'm not interested in complaining about it. I'm interested in building the counter-proof. At 14, I took control. Health, skills, income—everything the system said I was too young for. Left school at 15. Built a six-figure business by 16. Living in NYC, working with people I'm inspired by.
+              </p>
+              <div className="w-12 h-px" style={{ backgroundColor: brand.red }} />
+              <p className="text-white/90 text-base leading-relaxed">
+                I've been documenting this journey for years. Tried helping people become their best. But I learned something: convincing doesn't work. Preaching about what they should do doesn't move anyone. What works is proof. If a kid with less privilege, fewer connections, and no advantages can do it—what's your excuse?
               </p>
             </div>
             <div className="space-y-6">
               <p className="text-white/90 text-base leading-relaxed">
-                Not through paid ads or growth hacks, but through storytelling, consistency, and showing up as the humans behind the work.
+                Actions lead better than words ever could. That's what I've been doing. Built an audience of over 100,000 young people who are focused on becoming their best selves & not settling for mediocrity. But one story isn't enough to shift a generation.
               </p>
               <div className="w-12 h-px" style={{ backgroundColor: brand.red }} />
               <p className="text-white/90 text-base leading-relaxed">
-                I've spent 6 years creating content, scaling agencies, and working with startups. Now I'm focused on building a new standard for what founder-led and company content should look like—real, strategic, and built to last.
+                So I'm taking it further. "Setting the Standard"—a content series profiling founders, operators, and builders who rejected the path and won. I'm showcasing their stories, their decisions, their lives. Stories that will spread faster and hit harder than I ever could alone.
+              </p>
+              <div className="w-12 h-px" style={{ backgroundColor: brand.red }} />
+              <p className="text-white/90 text-base leading-relaxed">
+                We're at a crossroads. With AI eliminating the middle, infinite leverage available, the rules completely rewritten—this is the most vital time. I want to make sure our generation goes down the right path. Not comfort and mediocrity, but strength and greatness to achieve prosperity.
               </p>
             </div>
           </div>
@@ -312,7 +320,7 @@ export default function AdamSalmanov() {
           {/* Context for videos */}
           <div className="mt-12 pt-8 border-t border-white/10">
             <p className="text-white/70 text-sm mb-6 text-center">
-              Watch how I'm documenting this journey and setting the standard for my generation through my YouTube channel.
+              New episodes drop monthly starting soon. Until then, my story is below—proof that the path works if you take it.
             </p>
             <div className="grid md:grid-cols-3 gap-6">
               {[
@@ -341,11 +349,12 @@ export default function AdamSalmanov() {
       </Section>
 
       {/* PORTFOLIO (commented examples kept) */}
-      {/*
-      <Section id="portfolio" kicker="Portfolio" title="Selected Work">
-        ...
-      </Section>
-      */}
+      
+      {/* <Section id="portfolio" kicker="Portfolio" title="Selected Work">
+              <Resources />
+        
+      </Section> */}
+     
 
       {/* PRICING */}
       <Section id="pricing" kicker="Pricing" title="Salmanov Media Services">
