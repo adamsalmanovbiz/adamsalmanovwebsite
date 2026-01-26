@@ -14,6 +14,13 @@ import adam14 from './assets/logos/adam14.jpg';
 
 import FounderLedContentArticle from "./components/Articles/FounderLedContentArticle";
 
+const brand = {
+  black: "#0A0A0A",
+  red: "#DC2626",
+  redDark: "#B91C1C",
+  ink: "#FAFAFA",
+};
+
 const articleComponents = {
   "founder-led-content": <FounderLedContentArticle />
 };
@@ -40,7 +47,7 @@ const articles = [
     title: "LinkedIn Authority: From 0 to Consistent Inbound",
     date: "June 2025",
     headerImage: client1,
-    content: `How to build consistent inbound through LinkedIn — systems, cadence, and creative formats.`
+    content: `How to build consistent inbound through LinkedIn: systems, cadence, and creative formats.`
   },
   {
     slug: "weekly-long-form",
@@ -149,7 +156,7 @@ export default function ArticlePage() {
           <div className="flex items-center gap-2" style={{ fontFamily: "JetBrains Mono, ui-monospace" }}>
             <span>&lt;</span><span style={{ color: "#DC2626" }}>SALMANOV</span><span>/&gt;</span>
           </div>
-          <div className="text-white/50">© {new Date().getFullYear()} Adam Salmanov — Founder-Led Marketing • NYC</div>
+          <div className="text-white/50">© {new Date().getFullYear()} Adam Salmanov • Founder-Led Marketing • NYC</div>
         </div>
       </footer>
     </div>

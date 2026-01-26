@@ -1,10 +1,28 @@
 import { Link } from "react-router-dom";
+import { useEffect } from "react";
 import adam6 from './assets/logos/adam6.jpg';
 import adamnyc from './assets/logos/adamnyc.jpg';
 import client1 from './assets/logos/client1.png';
 import hero from "./assets/logos/adam6.jpg";
 
 export default function Articles() {
+  // Load Beehiiv scripts
+  useEffect(() => {
+    const embedScript = document.createElement('script');
+    embedScript.src = 'https://subscribe-forms.beehiiv.com/embed.js';
+    embedScript.async = true;
+    document.body.appendChild(embedScript);
+
+    const attrScript = document.createElement('script');
+    attrScript.src = 'https://subscribe-forms.beehiiv.com/attribution.js';
+    attrScript.async = true;
+    document.body.appendChild(attrScript);
+
+    return () => {
+      document.body.removeChild(embedScript);
+      document.body.removeChild(attrScript);
+    };
+  }, []);
   const brand = {
     black: "#0A0A0A",
     red: "#DC2626",
@@ -30,15 +48,13 @@ export default function Articles() {
           </div>
           <div className="hidden md:flex items-center gap-6 text-sm text-white/80">
               <Link to="/">Home</Link>
-            <a
-  href="https://cal.com/adamsal/salmanovmedia"
-  target="_blank"
-  rel="noopener noreferrer"
+            <Link
+  to="/#book"
   className="inline-flex items-center gap-2 rounded-xl px-5 py-3 text-sm font-medium transition-transform hover:-translate-y-0.5"
   style={{ backgroundColor: brand.red, color: brand.black }}
 >
   Book a Call
-</a>
+</Link>
 
           </div>
         </div>
@@ -64,6 +80,37 @@ export default function Articles() {
         </div>
         <div className="absolute left-0 right-0 bottom-0 h-24" style={{ background: "linear-gradient(180deg,transparent,#0A0A0A)" }} />
       </header>
+
+      {/* NEWSLETTER SIGNUP - hidden for now
+      <div className="max-w-2xl mx-auto px-6 py-12">
+        <div className="rounded-2xl border border-white/10 bg-gradient-to-br from-[#18181b] via-[#232326] to-[#101012] p-8 text-center">
+          <h2 className="text-2xl font-semibold mb-2" style={{ fontFamily: "Space Grotesk, Inter, system-ui" }}>
+            Stay Updated
+          </h2>
+          <p className="text-white/70 mb-6">
+            Get notified when I publish new articles and insights.
+          </p>
+          <div className="flex justify-center">
+            <iframe
+              src="https://subscribe-forms.beehiiv.com/420486bf-d496-4acc-922f-3281fb8cbca0"
+              className="beehiiv-embed"
+              data-test-id="beehiiv-embed"
+              style={{
+                width: "100%",
+                maxWidth: "480px",
+                height: "80px",
+                margin: 0,
+                borderRadius: "12px",
+                backgroundColor: "transparent",
+                boxShadow: "none",
+                border: "none",
+                overflow: "hidden"
+              }}
+            />
+          </div>
+        </div>
+      </div>
+      */}
 
       {/* ARTICLES LIST */}
       <div className="max-w-4xl mx-auto px-6 py-16">
@@ -114,7 +161,7 @@ export default function Articles() {
           <div className="flex items-center gap-2" style={{ fontFamily: "JetBrains Mono, ui-monospace" }}>
             <span>&lt;</span><span style={{ color: brand.red }}>SALMANOV</span><span>/&gt;</span>
           </div>
-          <div className="text-white/50">© {new Date().getFullYear()} Adam Salmanov — Founder-Led Marketing • NYC</div>
+          <div className="text-white/50">© {new Date().getFullYear()} Adam Salmanov • Founder-Led Marketing • NYC</div>
         </div>
       </footer>
     </div>

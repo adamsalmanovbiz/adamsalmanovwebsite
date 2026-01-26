@@ -1,5 +1,5 @@
 // src/AdamSalmanov.jsx
-// Personal site for Adam Salmanov — Founder-Led Content Marketing
+// Personal site for Adam Salmanov - Founder-Led Content Marketing
 
 import { Resources } from "./components/resources.jsx";
 import { Link } from "react-router-dom";
@@ -156,7 +156,7 @@ export default function AdamSalmanov() {
             Adam Salmanov
           </h1>
           <p className="text-white/100 max-w-2xl mx-auto mt-3">
-            I help founders & startups build brands people <span style={{ color: brand.red }}>recognize & trust </span> with content marketing
+            I help founders & startups build brands people <span style={{ color: brand.red }}>recognize & trust </span> with content marketing.
           </p>
           <p className="text-white/60 max-w-2xl mx-auto ">Setting the standard for the younger generation.</p>
 
@@ -167,7 +167,7 @@ export default function AdamSalmanov() {
           <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mt-10">
             <Stat value="315M+" label="Views driven" />
             <Stat value="6 years" label="Making content" />
-            <Stat value="Multi 6 figure" label="Agency ARR" />
+            <Stat value="6 figure" label="Agency ARR" />
             <Stat value="NYC & Remote" label="Where I operate" />
           </div>
         </div>
@@ -291,15 +291,15 @@ export default function AdamSalmanov() {
           <div className="grid md:grid-cols-2 gap-8 md:gap-12">
             <div className="space-y-6">
               <p className="text-white/90 text-base leading-relaxed">
-                Comfortable enough not to rebel, distracted enough not to build, just capable enough to be useful to someone else's vision. It's working. Look around—our generation is weaker, more medicated, less ambitious than any before us. And the people running things want it that way.
+                Comfortable enough not to rebel, distracted enough not to build, just capable enough to be useful to someone else's vision. It's working. Look around. Our generation is weaker, more medicated, less ambitious than any before us. And the people running things want it that way.
               </p>
               <div className="w-12 h-px" style={{ backgroundColor: brand.red }} />
               <p className="text-white/90 text-base leading-relaxed">
-                I'm not interested in complaining about it. I'm interested in building the counter-proof. At 14, I took control. Health, skills, income—everything the system said I was too young for. Left school at 15. Built a six-figure business by 16. Living in NYC, working with people I'm inspired by.
+                I'm not interested in complaining about it. I'm interested in building the counter-proof. At 14, I took control. Health, skills, income. Everything the system said I was too young for. Left school at 15. Built a six-figure business by 16. Living in NYC, working with people I'm inspired by.
               </p>
               <div className="w-12 h-px" style={{ backgroundColor: brand.red }} />
               <p className="text-white/90 text-base leading-relaxed">
-                I've been documenting this journey for years. Tried helping people become their best. But I learned something: convincing doesn't work. Preaching about what they should do doesn't move anyone. What works is proof. If a kid with less privilege, fewer connections, and no advantages can do it—what's your excuse?
+                I've been documenting this journey for years. Tried helping people become their best. But I learned something: convincing doesn't work. Preaching about what they should do doesn't move anyone. What works is proof. If a kid with less privilege, fewer connections, and no advantages can do it, what's your excuse?
               </p>
             </div>
             <div className="space-y-6">
@@ -308,11 +308,11 @@ export default function AdamSalmanov() {
               </p>
               <div className="w-12 h-px" style={{ backgroundColor: brand.red }} />
               <p className="text-white/90 text-base leading-relaxed">
-                So I'm taking it further. "Setting the Standard"—a content series profiling founders, operators, and builders who rejected the path and won. I'm showcasing their stories, their decisions, their lives. Stories that will spread faster and hit harder than I ever could alone.
+                So I'm taking it further. "Setting the Standard", a content series profiling founders, operators, and builders who rejected the path and won. I'm showcasing their stories, their decisions, their lives. Stories that will spread faster and hit harder than I ever could alone.
               </p>
               <div className="w-12 h-px" style={{ backgroundColor: brand.red }} />
               <p className="text-white/90 text-base leading-relaxed">
-                We're at a crossroads. With AI eliminating the middle, infinite leverage available, the rules completely rewritten—this is the most vital time. I want to make sure our generation goes down the right path. Not comfort and mediocrity, but strength and greatness to achieve prosperity.
+                We're at a crossroads. With AI eliminating the middle, infinite leverage available, the rules completely rewritten. This is the most vital time. I want to make sure our generation goes down the right path. Not comfort and mediocrity, but strength and greatness to achieve prosperity.
               </p>
             </div>
           </div>
@@ -320,7 +320,7 @@ export default function AdamSalmanov() {
           {/* Context for videos */}
           <div className="mt-12 pt-8 border-t border-white/10">
             <p className="text-white/70 text-sm mb-6 text-center">
-              New episodes drop monthly starting soon. Until then, my story is below—proof that the path works if you take it.
+              New episodes drop monthly starting soon. Until then, my story is below. Proof that the path works if you take it.
             </p>
             <div className="grid md:grid-cols-3 gap-6">
               {[
@@ -379,7 +379,7 @@ export default function AdamSalmanov() {
             </div>
 
             <p className="text-white/90 text-base leading-relaxed">
-              Most people start agencies because they see an opportunity. I'm doing this because I don't know how to do anything else—and I mean that in the best way. I've grown up making content. It's not a skill I learned in a course. It's what I've been obsessed with since I was a kid.
+              Most people start agencies because they see an opportunity. I'm doing this because I don't know how to do anything else. And I mean that in the best way. I've grown up making content. It's not a skill I learned in a course. It's what I've been obsessed with since I was a kid.
             </p>
 
             <p className="text-white/90 text-base leading-relaxed">
@@ -387,7 +387,7 @@ export default function AdamSalmanov() {
             </p>
 
             <p className="text-white/90 text-base leading-relaxed">
-              Here's what I'm really building: a media engine that compounds. Every piece of content, every story told, every audience built—it stacks. That attention and storytelling power? It'll let me do whatever I want in the future.
+              Here's what I'm really building: a media engine that compounds. Every piece of content, every story told, every audience built. It stacks. That attention and storytelling power? It'll let me do whatever I want in the future.
             </p>
 
             <p className="text-white/90 text-base leading-relaxed">
@@ -395,21 +395,21 @@ export default function AdamSalmanov() {
             </p>
 
             <p className="text-white/90 text-base leading-relaxed">
-              So if this resonates—if you want a content team that's obsessed, hungry, and moves fast—let's talk.
+              So if this resonates, if you want a content team that's obsessed, hungry, and moves fast, let's talk.
             </p>
 
             <div className="pt-4 flex flex-wrap gap-3">
               <Button href="https://salmanovmedia.com" target="_blank" rel="noopener noreferrer">
                 Visit Salmanov Media
               </Button>
-              <Button href="#book" variant="ghost">
+              <Button href="https://salmanovmedia.com/#/free-content" target="_blank" rel="noopener noreferrer" variant="ghost">
                 Get Free Content Piece
               </Button>
             </div>
           </div>
         </div>
 
-        {/* Client videos below */}
+{/* Client videos section - hidden for now
         <div className="mt-12 pt-8 border-t border-white/10">
           <p className="text-white/70 text-sm mb-6 text-center">
             We're giving out a free content piece to the next 4 founders & startups that apply. See how we work, the content we produce, and if you're a fan, we can figure out how to work together.
@@ -437,6 +437,7 @@ export default function AdamSalmanov() {
             ))}
           </div>
         </div>
+        */}
       </Section>
 
       {/* PRICING */}
@@ -483,7 +484,7 @@ export default function AdamSalmanov() {
           </div>
         </div>
         <div className="mt-6 flex gap-3">
-          <Button href="https://cal.com/adamsal/salmanovmedia" target="_blank" rel="noopener noreferrer">
+          <Button href="https://calendly.com/adam-salmanovmedia/30min" target="_blank" rel="noopener noreferrer">
             Book Content Strategy Call
           </Button>
           <a
@@ -510,7 +511,7 @@ export default function AdamSalmanov() {
             </div>
             <p className="text-white/70 text-sm mt-1">No pressure. See if I can help and how we’d approach it.</p>
             <div className="mt-4">
-              <Button href="https://cal.com/adamsal/15min" target="_blank" rel="noopener noreferrer">
+              <Button href="https://calendly.com/adam-salmanovmedia/discovery-call" target="_blank" rel="noopener noreferrer">
                 Book 15-min
               </Button>
             </div>
@@ -525,7 +526,7 @@ export default function AdamSalmanov() {
             </div>
             <p className="text-white/70 text-sm mt-1">Intro call related to working with my agency salmanov media</p>
             <div className="mt-4">
-              <Button href="https://cal.com/adamsal/salmanovmedia" target="_blank" rel="noopener noreferrer">
+              <Button href="https://calendly.com/adam-salmanovmedia/30min" target="_blank" rel="noopener noreferrer">
                 Book 15-min
               </Button>
             </div>
@@ -545,6 +546,9 @@ export default function AdamSalmanov() {
           </Button>
           <Button href="https://x.com/adamsalmanovbiz" variant="ghost">
             X / Twitter
+          </Button>
+          <Button href="https://www.linkedin.com/in/adam-salmanov-1520772a9/" target="_blank" rel="noopener noreferrer" variant="ghost">
+            LinkedIn
           </Button>
         </div>
       </Section>

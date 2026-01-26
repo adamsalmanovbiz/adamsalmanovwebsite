@@ -99,7 +99,7 @@ export default function FounderLedContentArticle() {
         <ul className="list-disc pl-6 space-y-2 marker:text-red-500">
           <li className="text-white/85">Every short adds another brick to your narrative moat.</li>
           <li className="text-white/85">Every podcast deepens positioning and opens doors.</li>
-          <li className="text-white/85">Every BTS moment makes the brand feel human — and memorable.</li>
+          <li className="text-white/85">Every BTS moment makes the brand feel human and memorable.</li>
         </ul>
         <p className="text-base md:text-lg text-white/80 leading-relaxed">
           Best case: you become the category leader and spin up new revenue streams. Worst case:
